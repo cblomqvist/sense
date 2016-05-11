@@ -13,7 +13,7 @@ import static javafx.application.Platform.runLater;
 import static javafx.collections.FXCollections.observableArrayList;
 
 public class LeaderboardData implements MessageListener<String> {
-    private static final int NUMBER_OF_LEADERS = 18;
+    private static final int NUMBER_OF_LEADERS = 10;
     //this should only be read & modified by this instance, therefore it doesn't need to be threadsafe
     //it stores the scores of all the users it has ever seen. This is going to get BIG
     private final Map<String, TwitterUser> allTwitterUsers = new HashMap<>();
