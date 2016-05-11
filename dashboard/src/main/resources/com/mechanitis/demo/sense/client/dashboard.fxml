@@ -1,4 +1,7 @@
 <?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
 <GridPane fx:controller="com.mechanitis.demo.sense.client.DashboardController"
           xmlns:fx="http://javafx.com/fxml"
           alignment="center" hgap="10" vgap="10">
@@ -8,5 +11,14 @@
                 GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.rowSpan="1"/>
     <fx:include source="hellohack.fxml" fx:id="hellohack"
                 GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.rowSpan="1"/>
+
+    <HBox spacing="10" alignment="bottom_right"
+          GridPane.columnIndex="1" GridPane.rowIndex="3">
+        <Button text="Sign In"
+                onAction="#handleSubmitButtonAction"/>
+    </HBox>
+
+    <Text fx:id="actiontarget"
+          GridPane.columnIndex="2" GridPane.rowIndex="3"/>
 
 </GridPane>
