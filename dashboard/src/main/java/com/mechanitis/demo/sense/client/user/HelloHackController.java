@@ -24,7 +24,7 @@ public class HellohackController {
   protected void handleActionButtonAction(ActionEvent event) {
 
     OkHttpClient okClient = new OkHttpClient();
-    final Request request = new Request.Builder().url("http://localhost:8080/ping").build();
+    final Request request = new Request.Builder().url("http://localhost:8080/hello/HackDay-Twitter").build();
     final Call call = okClient.newCall(request);
     try {
       final Response response = call.execute();
