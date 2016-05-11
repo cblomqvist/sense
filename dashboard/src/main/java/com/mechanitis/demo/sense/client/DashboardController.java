@@ -15,8 +15,6 @@ public class DashboardController {
     @FXML private LeaderboardController leaderboardController;
     @FXML private HellohackController hellohackController;
 
-    @FXML private Text actiontarget;
-
     public MoodController getMoodController() {
         return moodController;
     }
@@ -33,7 +31,5 @@ public class DashboardController {
         return hellohackController;
     }
 
-    @FXML protected void handleSubmitButtonAction(ActionEvent event) {
-        actiontarget.setText("Sign in button pressed");
-    }
+
 }

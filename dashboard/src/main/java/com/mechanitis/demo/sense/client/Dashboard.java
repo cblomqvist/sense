@@ -48,11 +48,6 @@ public class Dashboard extends Application {
     dashboardController.getMoodController().setData(moodChartData);
     dashboardController.getHappinessController().setData(happinessChartData);
 
-    HellohackController
-        hellohackController =
-        dashboardController.getHellohackController();
-    hellohackController.setData(leaderboardData);
-
     // let's go!
     primaryStage.setScene(scene);
     primaryStage.show();

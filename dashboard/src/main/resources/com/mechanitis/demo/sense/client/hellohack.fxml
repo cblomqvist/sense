@@ -2,19 +2,18 @@
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.text.Text?>
 <VBox xmlns:fx="http://javafx.com/fxml"
       spacing="10" alignment="CENTER"
       fx:controller="com.mechanitis.demo.sense.client.user.HellohackController">
-    <TableView fx:id="leaders" prefHeight="1000" prefWidth="500">
-        <columns>
-            <TableColumn text="Twitter Handle" prefWidth="300" >
-                <cellValueFactory><PropertyValueFactory property="twitterHandle" /></cellValueFactory>
-            </TableColumn>
-            <TableColumn text="Count" prefWidth="190">
-                <cellValueFactory><PropertyValueFactory property="tweets" /></cellValueFactory>
-            </TableColumn>
-        </columns>
-    </TableView>
 
+    <HBox spacing="10" alignment="CENTER">
+        <Button text="Action"
+                onAction="#handleActionButtonAction"/>
+    </HBox>
+
+    <Text fx:id="actiontarget"/>
 
 </VBox>
