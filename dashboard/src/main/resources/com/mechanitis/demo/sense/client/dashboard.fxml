@@ -5,5 +5,8 @@
     <fx:include source="mood.fxml" fx:id="mood" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
     <fx:include source="happy.fxml" fx:id="happy" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
     <fx:include source="leaderboard.fxml" fx:id="leaderboard"
-                GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.rowSpan="2"/>
+                GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.rowSpan="1"/>
+    <fx:include source="hellohack.fxml" fx:id="hellohack"
+                GridPane.columnIndex="2" GridPane.rowIndex="2" GridPane.rowSpan="1"/>
+
 </GridPane>

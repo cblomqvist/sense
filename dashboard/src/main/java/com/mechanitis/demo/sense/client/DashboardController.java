@@ -2,6 +2,7 @@ package com.mechanitis.demo.sense.client;
 
 import com.mechanitis.demo.sense.client.mood.HappinessController;
 import com.mechanitis.demo.sense.client.mood.MoodController;
+import com.mechanitis.demo.sense.client.user.HellohackController;
 import com.mechanitis.demo.sense.client.user.LeaderboardController;
 import javafx.fxml.FXML;
 
@@ -9,6 +10,7 @@ public class DashboardController {
     @FXML private MoodController moodController;
     @FXML private HappinessController happyController;
     @FXML private LeaderboardController leaderboardController;
+    @FXML private HellohackController hellohackController;
 
     public MoodController getMoodController() {
         return moodController;
@@ -20,5 +22,9 @@ public class DashboardController {
 
     public LeaderboardController getLeaderboardController() {
         return leaderboardController;
+    }
+
+    public HellohackController getHellohackController() {
+        return hellohackController;
     }
 }
