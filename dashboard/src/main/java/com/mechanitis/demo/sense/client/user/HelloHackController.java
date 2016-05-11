@@ -12,8 +12,10 @@ import javafx.fxml.FXML;
 import javafx.scene.control.TableView;
 import javafx.scene.text.Text;
 
-public class HellohackController {
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
+public class HellohackController {
 
   @FXML
   private Text actiontarget;
@@ -28,6 +30,7 @@ public class HellohackController {
       final Response response = call.execute();
       final int code = response.code();
       actiontarget.setText("Response code: "+code+", message: "+response.body().string());
+      log.debug("Code {}", code);
 
     } catch (IOException e) {
       actiontarget.setText(String.format("Action button pressed but something went wrong: %s", e.getMessage()));

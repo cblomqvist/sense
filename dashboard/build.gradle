@@ -1,8 +1,27 @@
+buildscript {
+    repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+    }
+    dependencies {
+        classpath "net.ltgt.gradle:gradle-apt-plugin:0.6"
+    }
+}
+
+apply plugin: "net.ltgt.apt"
+
 dependencies {
+//    apt "org.projectlombok:lombok:1+"
+
     compile project(':service')
     compile 'javax.websocket:javax.websocket-api:1.1'
     compile 'javax.json:javax.json-api:1.0'
     compile 'org.glassfish:javax.json:1.0.4'
     // needed to work around https://issues.gradle.org/browse/GRADLE-3046
     compile files("${System.properties['java.home']}/lib/ext/jfxrt.jar")
+    compile 'com.squareup.okhttp:okhttp:2+'
+    compile 'org.projectlombok:lombok:1+'
+
+    compile 'org.slf4j:slf4j-api:1+'
 }
